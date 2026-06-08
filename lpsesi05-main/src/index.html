@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferrari</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <span class="navItems" onclick="navTo('s1')">
+        <img src="../assets/icons/home.png" alt="Empresa" />
+        <a class="navWords">Empresa</a>
+      </span>
+      <span class="navItems" onclick="navTo('s2')">
+        <img src="../assets/icons/box.png" alt="Carros" />
+        <a class="navWords">Carros</a>
+      </span>
+      <span class="navItems" onclick="navTo('s3')">
+        <img src="../assets/icons/video.png" alt="Vídeo" />
+        <a class="navWords">Vídeo</a>
+      </span>
+      <span class="navItems" onclick="navTo('s4')">
+        <img src="../assets/icons/mobile.png" alt="Contato" />
+        <a class="navWords">Contato</a>
+      </span>
+    </nav>
+    <main>
+      <section id="s1">
+        <h1>Ferrari</h1>
+        <h2>O melhor carro esportivo do mundo.</h2>
+      </section>
+      <section id="s2">
+        <div class="card">
+          <img width="300px" height="auto" src="../assets/images/01.avif" alt="Carro 01" />
+          <div>
+            <h4>Ferrari F8 Tributo</h4>
+            <p>Um esportivo criado para unir desempenho extremo com dirigibilidade refinada no dia a dia. Seu motor V8 biturbo entrega aceleração brutal e um ronco que se tornou marca registrada da linha.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img width="300px" height="auto" src="../assets/images/02.jpg" alt="Carro 02" />
+          <div>
+            <h4>Ferrari 488 Pista</h4>
+            <p>Desenvolvida com foco em pistas, ela combina aerodinâmica agressiva com redução de peso. Cada detalhe foi pensado para respostas rápidas em curvas e máxima eficiência em alta velocidade.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img width="300px" height="auto" src="../assets/images/03.webp" alt="Carro 3" />
+          <div>
+            <h4>Ferrari LaFerrari</h4>
+            <p>Considerada um dos projetos mais icônicos da marca italiana, mistura motor a combustão com tecnologia híbrida inspirada na Fórmula 1. Seu design futurista acompanha um desempenho capaz de impressionar até colecionadores experientes.</p>
+          </div>
+        </div>
+      </section>
+      <section id="s3">
+        <iframe
+          class="vid"
+          src="https://www.youtube.com/embed/Po4w52SsNMk?si=EZhbUItp38zNPxI9&autoplay=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section id="s4">
+          <h3>CONTATO</h3>
+          <div class="formulario">
+              <label for="nome">Nome: </label>
+              <input type="text" id="nome" placeholder="Digite seu nome">
+              <label for="assunto">Mensagem: </label>
+              <textarea id="assunto" placeholder="Digite sua mensagem"></textarea>
+              <button onclick="enviar()">ENVIAR</button>
+          </div>
+      </section>
+    </main>
+    <footer>
+      <a href="https://www.facebook.com" target="_blank">
+        <img width="40px" src="../assets/icons/facebook.png" alt="facebook" />
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img width="40px" src="../assets/icons/instagram.png" alt="instagram" />
+      </a>
+      <a href="https://www.linkedin.com" target="_blank">
+        <img width="40px" src="../assets/icons/linkedin.png" alt="linkedin" />
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
